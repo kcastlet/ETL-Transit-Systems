@@ -1,15 +1,31 @@
+
+
 CREATE TABLE cities (
-        "id" INT PRIMARY KEY NOT NULL,
-         "name" VARCHAR NOT NULL,
-        "start_year" VARCHAR NOT NULL,
-        "country" VARCHAR NOT NULL
-        );
-     
-    
-    CREATE TABLE stations (
-        "id" INT PRIMARY KEY NOT NULL,
-        "name" VARCHAR NOT NULL,
-        "buildstart" VARCHAR NOT NULL,
-        "opening" VARCHAR NOT NULL,
-        "city_id" INT NOT NULL
-        );
+"City_ID" INT PRIMARY KEY NOT NULL,
+"City_Name" VARCHAR NOT NULL,
+"Start_Year" VARCHAR NOT NULL,
+"Country" VARCHAR NOT NULL
+);
+
+CREATE TABLE stations (
+"Station_ID" INT PRIMARY KEY NOT NULL,
+"Station_Name" VARCHAR ,
+"Buildstart" VARCHAR,
+"Opening" VARCHAR,
+"City_ID" INT NOT NULL
+);
+
+
+CREATE TABLE master (
+"Station_ID" INT PRIMARY KEY NOT NULL,
+"City_ID" INT NOT NULL,
+"City_Name" VARCHAR,
+"Start_Year" VARCHAR,
+"Country" VARCHAR,
+"Station_Name" VARCHAR,
+"Buildstart" VARCHAR,
+"Opening" VARCHAR
+);
+
+
+
