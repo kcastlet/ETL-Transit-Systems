@@ -20,7 +20,7 @@ Counted number of dropped rows = 10% of station data so kept nulls to have them 
 
 # Load
 Created database named transit_systems using PostgreSQL.
-<img src="https://github.com/kcastlet/ETL-Transit-Systems/blob/master/Images/Screenshot-%20querry%20example.png" height="50" width="100">
+<img src="https://github.com/kcastlet/ETL-Transit-Systems/blob/master/Images/Screenshot-%20querry%20example.png" height="200" width="400">
 Created cities (primary key = City_ID) and station tables (primary key = Station_ID).
 Merged cities and stations tables to a joint master table (primary key = Station_ID).
 Queried all, counted, grouped by country, ordered by country, then pulled station count by country.
