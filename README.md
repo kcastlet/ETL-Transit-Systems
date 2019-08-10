@@ -1,12 +1,12 @@
 # ETL Transit Systems of the World
 
-#Extract
+# Extract
 
 Two CSV file from Kaggle.com containing data on transit systems throughout the world
 Imported them with Python Pandas in Jupyter Notebook.
 
 
-#Transform
+# Transform
 
 Converted csv files to dataframes and excluded certain columns.
 Renamed remaining columns.
@@ -18,9 +18,9 @@ Dropped null values from stations dataframe.
 Counted number of dropped rows = 10% of station data so kept nulls to have them accounted for after ETL process.
 
 
-#Load
-
+# Load
 Created database named transit_systems using PostgreSQL.
+![](https://github.com/kcastlet/ETL-Transit-Systems/blob/master/Images/Screenshot-%20querry%20example.png = 200x200)
 Created cities (primary key = City_ID) and station tables (primary key = Station_ID).
 Merged cities and stations tables to a joint master table (primary key = Station_ID).
 Queried all, counted, grouped by country, ordered by country, then pulled station count by country.
